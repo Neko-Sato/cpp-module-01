@@ -6,7 +6,7 @@
 #    By: hshimizu <hshimizu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/24 17:27:29 by hshimizu          #+#    #+#              #
-#    Updated: 2024/03/27 02:58:36 by hshimizu         ###   ########.fr        #
+#    Updated: 2024/03/30 07:30:17 by hshimizu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,9 +23,6 @@ SRCS		+= randomChump.cpp
 
 $(NAME): $(SRCS)
 	$(CXX) $(CXXFLAGS) $^ -o $@
-
-clean: $(NAME)
-	rm -f $^
 
 .PHONY: clean
 clean: $(NAME)

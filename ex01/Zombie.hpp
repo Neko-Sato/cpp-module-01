@@ -6,7 +6,7 @@
 /*   By: hshimizu <hshimizu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 02:19:56 by hshimizu          #+#    #+#             */
-/*   Updated: 2024/03/30 07:30:40 by hshimizu         ###   ########.fr       */
+/*   Updated: 2024/04/10 11:44:07 by hshimizu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ private:
 	std::string _name;
 
 public:
-	Zombie(void);
-	Zombie(std::string name);
+	Zombie(std::string name = "");
+	~Zombie(void);
 
 	void set_name(std::string name);
 	void announce(void);

@@ -6,11 +6,11 @@
 #    By: hshimizu <hshimizu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/24 17:27:29 by hshimizu          #+#    #+#              #
-#    Updated: 2024/03/30 06:42:56 by hshimizu         ###   ########.fr        #
+#    Updated: 2024/04/21 18:08:01 by hshimizu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= HarlFilter
+NAME		= harlFilter
 
 CXX			= c++
 CXXFLAGS	= -Wall -Wextra -Werror -g

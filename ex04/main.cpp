@@ -6,7 +6,7 @@
 /*   By: hshimizu <hshimizu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 17:27:53 by hshimizu          #+#    #+#             */
-/*   Updated: 2024/04/20 19:45:03 by hshimizu         ###   ########.fr       */
+/*   Updated: 2024/04/21 18:08:25 by hshimizu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ std::string replaceAll(std::string string, std::string s1, std::string s2)
 		temp += s2;
 		temp += string.substr(index + s1.size());
 		start = index + s2.size();
+		if (s1.empty())
+			start++;
 		string = temp;
 	}
 	return string;

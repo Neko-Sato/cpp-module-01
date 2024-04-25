@@ -6,7 +6,7 @@
 /*   By: hshimizu <hshimizu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/28 03:14:33 by hshimizu          #+#    #+#             */
-/*   Updated: 2024/04/20 19:46:09 by hshimizu         ###   ########.fr       */
+/*   Updated: 2024/04/25 17:27:12 by hshimizu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,16 @@
 
 #include <iostream>
 
-class Harl
-{
-private:
-	void debug(void);
-	void info(void);
-	void warning(void);
-	void error(void);
+class Harl {
+ private:
+  void debug(void);
+  void info(void);
+  void warning(void);
+  void error(void);
 
-public:
-	static const std::string logsstr[4];
-	void complain(std::string level);
+ public:
+  static const std::string logsstr[4];
+  void complain(std::string level);
 };
 
 #endif

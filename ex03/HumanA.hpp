@@ -6,7 +6,7 @@
 /*   By: hshimizu <hshimizu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 13:13:23 by hshimizu          #+#    #+#             */
-/*   Updated: 2024/03/30 07:30:51 by hshimizu         ###   ########.fr       */
+/*   Updated: 2024/04/25 17:26:11 by hshimizu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,20 @@
 #ifndef __HUMANA_HPP__
 #define __WHUMAN_HPP__
 
-#include "Weapon.hpp"
 #include <iostream>
 
-class HumanA
-{
-private:
-	std::string _name;
-	Weapon &_weapon;
+#include "Weapon.hpp"
 
-public:
-	HumanA(std::string name, Weapon &weapon);
-	~HumanA();
+class HumanA {
+ private:
+  std::string _name;
+  Weapon &_weapon;
 
-	void attack(void);
+ public:
+  HumanA(std::string name, Weapon &weapon);
+  ~HumanA();
+
+  void attack(void);
 };
 
 #endif

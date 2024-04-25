@@ -6,7 +6,7 @@
 /*   By: hshimizu <hshimizu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/27 02:19:56 by hshimizu          #+#    #+#             */
-/*   Updated: 2024/04/10 11:38:59 by hshimizu         ###   ########.fr       */
+/*   Updated: 2024/04/25 17:25:40 by hshimizu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,15 @@
 
 #include <iostream>
 
-class Zombie
-{
-private:
-	std::string _name;
+class Zombie {
+ private:
+  std::string _name;
 
-public:
-	Zombie(std::string name = "");
-	~Zombie(void);
+ public:
+  Zombie(std::string name = "");
+  ~Zombie(void);
 
-	void announce(void);
+  void announce(void);
 };
 
 Zombie *newZombie(std::string name);
